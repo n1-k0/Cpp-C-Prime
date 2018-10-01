@@ -1,2 +1,2 @@
-# Cpp-C-Prime
+# Cpp-C++-Prime
 C++ prime 5th
