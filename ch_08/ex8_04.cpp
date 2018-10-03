@@ -4,6 +4,8 @@
 #include <string>
 using namespace std;
 
+
+//getline()读取整行
 int main()
 {
 	ifstream in("ch_08.txt");
@@ -17,5 +19,22 @@ int main()
 	}
 	else cout << "in ERROR!" << endl;
 
+	return 0;
+}
+
+//逐个字符读取(忽略空格回车)
+int main()
+{
+	ifstream in;
+	in.open("ch_08.txt");
+	assert(in.is_open());
+	vector<string> vec;
+	vec.clear();
+	char c;
+	while (!in.eof()) {
+		in >> c;
+		cout << c << endl;
+	}
+	in.close();
 	return 0;
 }
