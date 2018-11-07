@@ -10,7 +10,7 @@ public:
 	HasPtr(const HasPtr& hp) : ps(new std::string(*hp.ps)), i(hp.i) {}
 	HasPtr& operator = (const HasPtr& hp) {
 		if (this != &hp) {
-			auto newp = new string(*hp.ps);
+			auto newp = new std::string(*hp.ps);
 			delete ps;
 			ps = newp;
 			i = hp.i;
